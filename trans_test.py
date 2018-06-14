@@ -78,3 +78,7 @@ def delete_todo(todo_id):
 
 #テスト用のサーバをlocalhost:8080で起動する
 #run(host="localhost", port=8080, debug=True, reloader=True)
+
+#Webapp実行の場合
+if __name__ == '__main__':
+  app.run()
