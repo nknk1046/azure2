@@ -32,7 +32,8 @@ table_service = TableService(connection_string='DefaultEndpointsProtocol=https;A
 @route("/")
 def index():
     todo_list = get_todo_list()
-    return template("Trans_test/index", todo_list=todo_list)
+    #return template("Trans_test/index", todo_list=todo_list)
+    return template("Trans_test/top", todo_list=todo_list)
 
 # methodにPOSTを指定して、add関数を実装する
 @route("/add", method="POST")
