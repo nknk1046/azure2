@@ -24,7 +24,7 @@ def translate (content):
     response = conn.getresponse ()
     return response.read ()
 
-#読みやすい形式で出力
+#読みやすい形式で出力する
 #output = json.dumps(json.loads(result), indent=4, ensure_ascii=False)
 #print (output)
 
